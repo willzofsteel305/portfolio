@@ -48,3 +48,23 @@ const revealOnScroll = () => {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+// existing code...
+
+// === Scroll Reveal ===
+const reveals = document.querySelectorAll('.reveal');
+const revealOnScroll = () => { ... };
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+
+// === Smooth Scroll ===
+document.querySelectorAll('a[href^="#"]').forEach(link => { ... });
+
+// === Neon Cursor ===
+const cursor = document.createElement('div');
+cursor.style.position = 'fixed';
+...
+document.addEventListener('mousemove', e => { ... });
+
+// === Form Validation ===
+const form = document.querySelector('form');
+form.addEventListener('submit', e => { ... });
