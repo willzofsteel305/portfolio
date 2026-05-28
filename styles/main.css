@@ -380,3 +380,25 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.ripple {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--yellow);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rippleAnim 0.6s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes rippleAnim {
+    from {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(12);
+    }
+}
+
