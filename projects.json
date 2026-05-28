@@ -1,0 +1,14 @@
+[
+  {
+    "title": "IRON WILLZ Website",
+    "description": "A JSON-driven creator portfolio with music, videos, and art.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "#"
+  },
+  {
+    "title": "AI Art Gallery",
+    "description": "A frontend-only gallery showcasing AI-generated artwork.",
+    "tech": ["JavaScript", "CSS Grid"],
+    "link": "#"
+  }
+]
