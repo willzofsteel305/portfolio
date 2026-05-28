@@ -1,61 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>William • Portfolio</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
-
 <body>
 
   <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-inner">
-      <h1 class="logo">WILLZ</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <nav>
+    <div class="logo">IRON WILLZ // 305</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
+  </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner fade-up">
-      
-      <div class="hero-text">
-        <h2>Hi, I'm <span>William</span></h2>
-        <p>Frontend Developer • Designer • Creator</p>
+  <header id="hero" class="hero">
+    <h1>Hi, I'm William</h1>
+    <h2>Frontend Developer • Designer • Creator</h2>
+    <p>I build bold, modern, cyberpunk‑inspired web experiences using clean, scalable code.</p>
+    <button class="btn neon-outline" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+      View Projects
+    </button>
+  </header>
 
-        <div class="hero-tags">
-          <div class="hero-tag">HTML</div>
-          <div class="hero-tag">CSS</div>
-          <div class="hero-tag">JavaScript</div>
-        </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a frontend developer focused on building fast, responsive, visually striking interfaces.
+      I care about clean structure, maintainable CSS, and experiences that actually feel alive.
+    </p>
 
-        <div class="btn-row">
-          <a href="projects.html" class="btn btn-primary">View Projects</a>
-          <a href="about.html" class="btn btn-ghost">About Me</a>
-        </div>
-      </div>
+    <h3>Tech Stack</h3>
+    <ul>
+      <li>HTML • CSS • JavaScript</li>
+      <li>Responsive Design • UI/UX</li>
+      <li>Git • GitHub • VS Code</li>
+    </ul>
+  </section>
 
-      <div class="hero-visual fade-up">
-        <div class="hero-orbit">
-          <div class="hero-avatar">W</div>
-          <div class="hero-pills">
-            <div class="hero-pill">Creator</div>
-            <div class="hero-pill">Developer</div>
-            <div class="hero-pill">Designer</div>
-          </div>
-        </div>
-      </div>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <article class="card neon-outline">
+        <h3>Cyberpunk Portfolio</h3>
+        <p>A neon‑themed personal site with glowing UI, glassmorphism, and responsive layout.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn">GitHub</a>
+      </article>
+
+      <article class="card neon-outline">
+        <h3>305 Live Concept</h3>
+        <p>A concept platform for creators with animated cards and category‑based navigation.</p>
+        <p><strong>Tech:</strong> HTML, CSS</p>
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn">GitHub</a>
+      </article>
+
+      <article class="card neon-outline">
+        <h3>UI Experiments</h3>
+        <p>A collection of micro‑interactions, hover effects, and layout experiments.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JS</p>
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn">GitHub</a>
+      </article>
 
     </div>
   </section>
 
-  <script src="scripts/scroll.js"></script>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to collaborate or see more of my work? Reach out below.</p>
+
+    <form>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name" />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Tell me about your project"></textarea>
+
+      <button type="submit" class="btn neon-outline">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 William • IRON WILLZ</p>
+    <p>Built with HTML, CSS, and a cyberpunk mindset.</p>
+  </footer>
+
 </body>
 </html>
