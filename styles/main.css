@@ -226,3 +226,19 @@ footer {
     transform: translateY(0);
 }
 
+/* existing styles... */
+
+/* === Enhancements === */
+.hero-title { ... }
+@keyframes neonPulse { ... }
+
+.reveal { ... }
+.reveal.visible { ... }
+
+.section-divider { ... }
+
+.project-card { ... }
+.project-card:hover { ... }
+
+button { ... }
+button::after { ... }
