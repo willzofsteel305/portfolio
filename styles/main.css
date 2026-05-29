@@ -445,3 +445,6 @@ footer {
         flex-direction: row;
     }
 }
+.project-btn {
+    display: none !important;
+}
