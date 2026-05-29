@@ -448,3 +448,7 @@ footer {
 .project-btn {
     display: none !important;
 }
+
+.project-buttons {
+    display: none !important;
+}
