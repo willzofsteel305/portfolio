@@ -401,4 +401,47 @@ footer {
         transform: scale(12);
     }
 }
+.project-card {
+    position: relative;
+    padding: 20px;
+    padding-right: 180px; /* space so text never overlaps buttons */
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
 
+.project-info h3 {
+    margin-bottom: 8px;
+}
+
+.project-buttons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-btn {
+    padding: 8px 14px;
+    background: var(--blue);
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .project-card {
+        padding-right: 20px;
+    }
+
+    .project-buttons {
+        position: static;
+        transform: none;
+        margin-top: 12px;
+        flex-direction: row;
+    }
+}
