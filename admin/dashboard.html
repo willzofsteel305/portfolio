@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>IRON WILLZ Admin Dashboard</h1>
+  <button id="logout-btn">Logout</button>
+</header>
+
+<section class="panel">
+  <h2>Add New Content</h2>
+
+  <select id="type">
+    <option value="music">Music</option>
+    <option value="video">Video</option>
+    <option value="art">Art</option>
+  </select>
+
+  <input id="title" type="text" placeholder="Title">
+  <input id="description" type="text" placeholder="Description">
+
+  <label>Thumbnail:</label>
+  <input id="thumbnail" type="file">
+
+  <label>File / URL:</label>
+  <input id="file" type="file">
+  <input id="url" type="text" placeholder="Or paste external URL">
+
+  <button id="add-btn">Add Content</button>
+
+  <p id="add-status"></p>
+</section>
+
+<section class="panel">
+  <h2>Existing Content</h2>
+  <div id="content-list"></div>
+</section>
+
+<section class="panel">
+  <h2>Messages</h2>
+  <div id="messages"></div>
+</section>
+
+<script type="module" src="dashboard.js"></script>
+</body>
+</html>
