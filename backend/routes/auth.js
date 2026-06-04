@@ -10,12 +10,12 @@ router.post("/register-admin", async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    const exists = await User.findOne({ username });
+    const exists = await user.findOne({ username });
     if (exists) return res.status(400).json({ message: "User exists" });
 
     const passwordHash = await bcrypt.hash(password, 10);
 
-    await User.create({ username, passwordHash });
+    await user.create({ username, passwordHash });
 
     res.json({ message: "Admin created" });
   } catch {
@@ -28,7 +28,7 @@ router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    const user = await User.findOne({ username });
+    const user = await user.findOne({ username });
     if (!user) return res.status(400).json({ message: "Invalid credentials" });
 
     const match = await bcrypt.compare(password, user.passwordHash);
